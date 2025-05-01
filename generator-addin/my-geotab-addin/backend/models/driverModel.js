@@ -48,19 +48,7 @@ const driverSchema = new mongoose.Schema({
     type: String,
     required: true
   },
-  driverDOB: {
-    type: Date,
-    required: true,
-    validate: {
-      validator: function(value) {
-        // Validate driver is at least 18 years old
-        const minAgeDate = new Date();
-        minAgeDate.setFullYear(minAgeDate.getFullYear() - 18);
-        return value <= minAgeDate;
-      },
-      message: 'Driver must be at least 18 years old'
-    }
-  },
+ 
   contactEmail: {
     type: String,
     required: true,

@@ -4,7 +4,21 @@ module.exports.createDriver = async(req,res,next)=>{
 
     console.log('hello')
 
-    const {companyName , automatedLicenceCheck , driverNumber , surname , contactNo , driverGoups , depotChangeAllowed , driverStatus , driverLicenceCheck , driverDOB , contactEmail , depotName } = req.body;
+    const {
+        companyName,
+        automatedLicenceCheck,
+        driverNumber,
+        surname,
+        contactNo,
+        driverGroups,  // spelling fixed from driverGoups
+        depotChangeAllowed,
+        driverStatus,
+        driverLicenceNo, // FIXED NAME
+        driverDOB,
+        contactEmail,
+        depotName
+      } = req.body;
+      
 
     console.log(req.body)
 
@@ -15,8 +29,20 @@ module.exports.createDriver = async(req,res,next)=>{
     }
 
     await driverModel.create({
-        companyName , automatedLicenceCheck , driverNumber , surname , contactNo , driverGoups , depotChangeAllowed , driverStatus , driverLicenceCheck , driverDOB , contactEmail , depotName
-    })
+        companyName,
+        automatedLicenceCheck,
+        driverNumber,
+        surname,
+        contactNo,
+        driverGroups,
+        depotChangeAllowed,
+        driverStatus,
+        driverLicenceNo,
+        driverDOB,
+        contactEmail,
+        depotName
+      });
+      
 
     return res.status(200).json({ message: "driver created successfully" })
 
