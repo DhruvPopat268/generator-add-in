@@ -1,0 +1,24 @@
+{
+  "name": "prayosha-addin",
+  "supportEmail": "dhruvpopat268@gmail.com",
+  "version": "0.0.1",
+  "items": [{
+    
+    
+    "url": "prayoshaAddin.html",
+    "category": "AddIns",
+    "menuName": {
+      "en": "prayosh addin"
+    },
+    
+    "icon": "images/icon.svg"
+  }],
+  
+  
+  "dev": {
+    "root": "prayoshaAddin",
+    "dist": {
+      "host": "http://localhost:4000/"
+    }
+  }
+}
