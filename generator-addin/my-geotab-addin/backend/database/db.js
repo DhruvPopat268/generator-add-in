@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 function ConnectToMongoDb () {
-    mongoose.connect('mongodb://localhost:27017/GeoTabAddIn')
+    mongoose.connect('process.env.DB_CONNECT')
     .then( () => { 
         console.log("MongoDb connected successfully")
      } ) 
