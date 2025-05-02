@@ -18,7 +18,7 @@
   "dev": {
     "root": "prayoshaAddin",
     "dist": {
-      "host": "http://localhost:4000/"
+      "host": "https://generator-add-in-frontend.onrender.com"
     }
   }
 }
