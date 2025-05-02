@@ -4,7 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "preinstall": "npm install --package-lock-only --ignore-scripts && npx npm-force-resolutions",
     "build": "webpack",
     "dev": "webpack serve --config webpack.dev.js",
     "postbuild": "node zip.util.js"
