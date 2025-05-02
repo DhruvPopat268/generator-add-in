@@ -13,16 +13,16 @@ module.exports = {
     assetModuleFilename: '[name][ext]',
     clean: true
   },
-  devServer: {
-    static: {
-      directory: path.resolve(__dirname, 'dist')
-    },
-    port: 3000,
-    open: true,
-    hot: true,
-    compress: true,
-    historyApiFallback: true
-  },
+  // devServer: {
+  //   static: {
+  //     directory: path.resolve(__dirname, 'dist')
+  //   },
+  //   port: 3000,
+  //   open: true,
+  //   hot: true,
+  //   compress: true,
+  //   historyApiFallback: true
+  // },
   devtool: 'source-map',
   
   module: {

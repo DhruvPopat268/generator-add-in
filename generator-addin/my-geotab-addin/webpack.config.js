@@ -37,7 +37,7 @@ const jsFileName = () => {
 module.exports = {
   mode: 'production',
   entry: {
-    bundle: path.resolve(__dirname, 'src/app/index.js'),
+    bundle: path.resolve(__dirname, 'src/scripts/components/App.jsx'),
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
